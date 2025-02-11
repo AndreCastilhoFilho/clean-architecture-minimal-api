@@ -39,6 +39,7 @@ Instead of separating handlers, validators, and mappers into global layers, each
 
 ### **Example: `CreateUser` Use Case**
 ![use case folder structure](docs/use-case-structure.png)
+
 Each use case contains:
 - **Endpoint:** Handles HTTP requests (`CreateUserEndpoint.cs`)
 - **Handler:** Implements business logic (`CreateUserHandler.cs`)
