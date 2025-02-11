@@ -116,9 +116,16 @@ dotnet dev-certs https --trust
 - [EntityFrameworkCore.Design](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/) - `dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.0`
 - [Swagger (Swashbuckle)](https://www.nuget.org/packages/Swashbuckle.AspNetCore/) - `dotnet add package Swashbuckle.AspNetCore --version 6.4.0`
 
-## References
+## Credits & References
+This project was built using concepts and inspirations from various sources. A key reference was:
+
+- [Pedro Lucas' Minimal API with Clean Architecture](https://github.com/Pedro-Lucas-OKB/minimal-api-with-clean-architecture)
+
+This implementation builds upon the original ideas while introducing a **more streamlined structure**, integrating **Vertical Slice principles within Clean Architecture**, and optimizing for **Minimal APIs in .NET 8**.
+
+For further reading:
 - [ASP.NET Core Minimal APIs](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis/overview?view=aspnetcore-8.0)
-- [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+- [Clean Architecture by Uncle Bob](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 
 ## License
 [![License](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
