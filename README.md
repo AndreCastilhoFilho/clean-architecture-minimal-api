@@ -30,7 +30,7 @@ Clean Architecture organizes code into distinct layers to improve maintainabilit
 This project follows a pragmatic approach where the API integrates both the Application and Presentation layers while still ensuring a clear separation of concerns.
 
 
-![Minimal API with Clean Architecture](docs/minimal-api-clean-architecture.jpg)
+![Minimal API with Clean Architecture](docs/minimal-api-clean-architecture.png)
 
 The Use cases are structured using a **Vertical Slice approach**. 
 
