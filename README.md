@@ -29,7 +29,23 @@ Clean Architecture organizes code into distinct layers to improve maintainabilit
 ## Project Architecture
 This project follows a pragmatic approach where the API integrates both the Application and Presentation layers while still ensuring a clear separation of concerns.
 
+
 ![Minimal API with Clean Architecture](docs/minimal-api-clean-architecture.jpg)
+
+The Use cases are structured using a **Vertical Slice approach**. 
+
+### **Why Vertical Slice for Use Cases?**
+Instead of separating handlers, validators, and mappers into global layers, each **use case** has its own self-contained folder, making it easier to manage and extend.
+
+### **Example: `CreateUser` Use Case**
+(docs/use-case-structure.png)
+Each use case contains:
+- **Endpoint:** Handles HTTP requests (`CreateUserEndpoint.cs`)
+- **Handler:** Implements business logic (`CreateUserHandler.cs`)
+- **Mapper:** Converts between domain and DTOs (`CreateUserMapper.cs`)
+- **Validator:** Ensures data integrity (`CreateUserValidator.cs`)
+
+📌 This structure keeps related logic together, making it **easier to navigate, test, and scale** without losing the core principles of **Clean Architecture**.
 
 ## Patterns Used
 - **CQRS (Command and Query Responsibility Segregation)**
