@@ -46,3 +46,4 @@ namespace CleanArchitecture.Infrastructure.Middlewares
             }
         }
     }
+}
