@@ -16,17 +16,10 @@ namespace CleanArchitecture.API.UseCases.UpdateUser
 
         public static async Task<IResult> Update(Guid id, UserRequest.UpdateUserRequest request, IMediator mediator, CancellationToken cancellationToken)
         {
-            try
-            {
-                if (id != request.Id) return Results.BadRequest();
+            if (id != request.Id) return Results.BadRequest();
 
-                var response = await mediator.Send(request, cancellationToken);
-                return Results.Ok(response);
-            }
-            catch (FluentValidation.ValidationException e)
-            {
-                return Results.Problem(e.Message);
-            }
+            var response = await mediator.Send(request, cancellationToken);
+            return Results.Ok(response);
         }
     }
 }

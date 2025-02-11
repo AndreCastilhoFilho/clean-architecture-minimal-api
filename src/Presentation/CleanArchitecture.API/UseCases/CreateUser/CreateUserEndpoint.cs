@@ -14,20 +14,13 @@ namespace CleanArchitecture.API.UseCases.CreateUser
             app.MapPost(Route, Create)
             .WithSummary("Add an user to database")
             .WithDescription("Add an user to the database based on the provided email address and name")
-.WithTags("Users");
+            .WithTags("Users");
         }
 
         public static async Task<IResult> Create(UserRequest.CreateUserRequest request, IMediator mediator, CancellationToken cancellationToken)
         {
-            try
-            {
-                var response = await mediator.Send(request, cancellationToken);
-                return Results.Ok(response);
-            }
-            catch (FluentValidation.ValidationException e)
-            {
-                return Results.Problem(e.Message);
-            }
+            var response = await mediator.Send(request, cancellationToken);
+            return Results.Ok(response);
         }
     }
 }

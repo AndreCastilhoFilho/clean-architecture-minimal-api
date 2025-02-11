@@ -15,19 +15,12 @@ namespace CleanArchitecture.API.UseCases.DeleteUser
         }
         public static async Task<IResult> Delete(Guid? id, IMediator mediator, CancellationToken cancellationToken)
         {
-            try
-            {
-                if (id == null) return Results.BadRequest();
+            if (id == null) return Results.BadRequest();
 
-                var deleteUser = new UserRequest.DeleteUserRequest(id.Value);
+            var deleteUser = new UserRequest.DeleteUserRequest(id.Value);
 
-                var response = await mediator.Send(deleteUser, cancellationToken);
-                return Results.Ok(response);
-            }
-            catch (FluentValidation.ValidationException e)
-            {
-                return Results.Problem(e.Message);
-            }
+            var response = await mediator.Send(deleteUser, cancellationToken);
+            return Results.Ok(response);
         }
     }
 }

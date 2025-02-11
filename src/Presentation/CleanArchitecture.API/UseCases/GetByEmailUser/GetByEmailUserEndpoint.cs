@@ -16,15 +16,10 @@ namespace CleanArchitecture.API.UseCases.GetByEmailUser
 
         public static async Task<IResult> GetByEmail(string? email, IMediator mediator, CancellationToken cancellationToken)
         {
-            try
-            {
-                var response = await mediator.Send(new UserRequest.GetByEmailUser(email), cancellationToken);
-                return Results.Ok(response);
-            }
-            catch (FluentValidation.ValidationException e)
-            {
-                return Results.Problem(e.Message);
-            }
+
+            var response = await mediator.Send(new UserRequest.GetByEmailUser(email), cancellationToken);
+            return Results.Ok(response);
+
         }
     }
 }
