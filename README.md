@@ -28,7 +28,8 @@ Clean Architecture organizes code into distinct layers to improve maintainabilit
 
 ## Project Architecture
 This project follows a pragmatic approach where the API integrates both the Application and Presentation layers while still ensuring a clear separation of concerns.
-![Minimal API with Clean Architecture](docs/Minimal API with Clean Architecture.jpg)
+
+![Minimal API with Clean Architecture](docs/minimal-api-clean-architecture.jpg)
 
 ## Patterns Used
 - **CQRS (Command and Query Responsibility Segregation)**
