@@ -44,7 +44,7 @@ The project follows a structured approach to maintain code organization and clar
  ┣ 📂 src
  ┃ ┣ 📂 Domain (Domain models, Business Logic)
  ┃ ┣ 📂 Infrastructure (Data Access, External dependencies)
- ┃ ┣ 📂 API (Presentation Layer & Minimal API Endpoints)
+ ┃ ┣ 📂 API (Minimal API Endpoints & Application concerns)
  ┗ 📂 tests (Unit and Integration Tests)
 ```
 
