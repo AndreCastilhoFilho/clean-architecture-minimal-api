@@ -16,10 +16,8 @@ namespace CleanArchitecture.API.UseCases.GetAllUsers
 
         public static async Task<IResult> GetAll(IMediator mediator, CancellationToken cancellationToken)
         {
-
             var response = await mediator.Send(new UserRequest.GetAllUsersRequest(), cancellationToken);
             return Results.Ok(response);
-
         }
     }
 }

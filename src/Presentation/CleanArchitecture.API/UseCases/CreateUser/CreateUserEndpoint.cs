@@ -10,7 +10,6 @@ namespace CleanArchitecture.API.UseCases.CreateUser
         private const string Route = "/api/users";
         public void RegisterEndpoints(IEndpointRouteBuilder app)
         {
-
             app.MapPost(Route, Create)
             .WithSummary("Add an user to database")
             .WithDescription("Add an user to the database based on the provided email address and name")
