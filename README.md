@@ -38,7 +38,7 @@ The Use cases are structured using a **Vertical Slice approach**.
 Instead of separating handlers, validators, and mappers into global layers, each **use case** has its own self-contained folder, making it easier to manage and extend.
 
 ### **Example: `CreateUser` Use Case**
-[use case folder structure](docs/use-case-structure.png)
+![use case folder structure](docs/use-case-structure.png)
 Each use case contains:
 - **Endpoint:** Handles HTTP requests (`CreateUserEndpoint.cs`)
 - **Handler:** Implements business logic (`CreateUserHandler.cs`)
