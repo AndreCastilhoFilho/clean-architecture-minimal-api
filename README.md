@@ -22,9 +22,13 @@ app.Run();
 For more details, check the [Microsoft documentation](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis/overview?view=aspnetcore-8.0).
 
 ## Clean Architecture
-Clean Architecture organizes code into distinct layers to improve maintainability and scalability. This project follows a pragmatic approach where the API integrates both the Application and Presentation layers while still ensuring a clear separation of concerns.
+Clean Architecture organizes code into distinct layers to improve maintainability and scalability. 
 
 ![Clean Architecture Diagram](https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg)
+
+## Project Architecture
+This project follows a pragmatic approach where the API integrates both the Application and Presentation layers while still ensuring a clear separation of concerns.
+![Minimal API with Clean Architecture](docs/Minimal API with Clean Architecture.jpg)
 
 ## Patterns Used
 - **CQRS (Command and Query Responsibility Segregation)**
