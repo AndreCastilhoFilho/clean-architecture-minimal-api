@@ -42,7 +42,7 @@ Instead of separating handlers, validators, and mappers into global layers, each
 
 Each use case contains:
 - **Endpoint:** Handles HTTP requests (`CreateUserEndpoint.cs`)
-- **Handler:** Implements business logic (`CreateUserHandler.cs`)
+- **Handler:** Orchestrates business logic (`CreateUserHandler.cs`)
 - **Mapper:** Converts between domain and DTOs (`CreateUserMapper.cs`)
 - **Validator:** Ensures data integrity (`CreateUserValidator.cs`)
 
