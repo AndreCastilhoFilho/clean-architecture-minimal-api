@@ -117,15 +117,16 @@ dotnet dev-certs https --trust
 - [Swagger (Swashbuckle)](https://www.nuget.org/packages/Swashbuckle.AspNetCore/) - `dotnet add package Swashbuckle.AspNetCore --version 6.4.0`
 
 ## Credits & References
-This project was built using concepts and inspirations from various sources. A key reference was:
+This project was built using concepts and inspirations from various sources. One reference was:
 
 - [Pedro Lucas' Minimal API with Clean Architecture](https://github.com/Pedro-Lucas-OKB/minimal-api-with-clean-architecture)
 
-This implementation builds upon the original ideas while introducing a **more streamlined structure**, integrating **Vertical Slice principles within Clean Architecture**, and optimizing for **Minimal APIs in .NET 8**.
+While this project started with some inspiration from the original, it has been significantly modified and restructured to introduce a more streamlined architecture, integrating Vertical Slice principles within Clean Architecture, and optimizing for Minimal APIs in .NET 8.
 
 For further reading:
 - [ASP.NET Core Minimal APIs](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/minimal-apis/overview?view=aspnetcore-8.0)
 - [Clean Architecture by Uncle Bob](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+- [Vertical Slice Architecture](https://jimmybogard.com/vertical-slice-architecture/)
 
 ## License
 [![License](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
