@@ -18,6 +18,8 @@ namespace CleanArchitecture.API.UseCases.CreateUser
 
         public static async Task<IResult> Create(UserRequest.CreateUserRequest request, IMediator mediator, CancellationToken cancellationToken)
         {
+            if (request.Name.StartsWith("A")) throw new InvalidOperationException("We don't accept names that starts with A");
+
             var response = await mediator.Send(request, cancellationToken);
             return Results.Ok(response);
         }
